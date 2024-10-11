@@ -29,4 +29,6 @@ class CryptoModel {
         high_24h: json['high_24h'].toDouble(),
         low_24h: json['low_24h'].toDouble());
   }
+
+  toDouble() {}
 }

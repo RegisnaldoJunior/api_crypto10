@@ -1,3 +1,4 @@
+import 'package:aula_mvvm/view/detail_crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -64,6 +65,9 @@ class CryptoListPage extends StatelessWidget {
                       'R\$ ${crypto.price.toStringAsFixed(2)}',
                       style: TextStyle(fontSize: 18),
                     ),
+                    onTap: () {
+                      Get.to(() => CryptoDetailPage(crypto: crypto));
+                    },
                   ),
                 ),
               );
